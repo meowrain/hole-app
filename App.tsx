@@ -7,7 +7,7 @@ import { ReactQueryProvider } from '@/shared/providers/react-query'
 import { persistor, store } from '@/store'
 import { PersistGate } from 'redux-persist/integration/react'
 import { NativeBaseProvider } from 'native-base'
-
+import { OnBoardScreen } from '@/pages/OnBoard'
 export default function App() {
   return (
     <Provider store={store}>
@@ -16,6 +16,7 @@ export default function App() {
           <PaperProvider>
             <NavigationContainer>
               <NativeBaseProvider>
+                <OnBoardScreen />
                 <Layout />
               </NativeBaseProvider>
             </NavigationContainer>
